@@ -67,8 +67,8 @@ namespace AppClient
 
         static Response? SendPost(Request request)
         {
-            try
-            {
+            //try
+            //{
 
                 using (var httpClient = new HttpClient())
                 {
@@ -82,12 +82,12 @@ namespace AppClient
 
                 }
 
-            }
-            catch (Exception ex)
-            {
-                Console.Write(ex.ToString());
-                return null;
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.Write(ex.ToString());
+            //    return null;
+            //}
         }
 
     }
