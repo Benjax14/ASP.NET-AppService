@@ -7,7 +7,7 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
 
-namespace AppService1
+namespace AppClient
 {
     internal class Program
     {
@@ -67,8 +67,8 @@ namespace AppService1
 
         static Response? SendPost(Request request)
         {
-
-            try {
+            try
+            {
 
                 using (var httpClient = new HttpClient())
                 {
@@ -88,8 +88,6 @@ namespace AppService1
                 Console.Write(ex.ToString());
                 return null;
             }
-
-            
         }
 
     }
